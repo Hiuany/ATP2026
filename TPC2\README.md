@@ -8,6 +8,7 @@
 ## Resumo
 Criar um jogo em que o computador pensa em um número inteiro de 0 a 100 e o utilizador precisa adivinhar esse número.
 
+```pyhton
 numero=int(input("Introduza um número de 0 a 100"))
 tentativas=0                 
 import random
@@ -24,4 +25,4 @@ while resposta!=numero:
         print("O número introduzido é menor")
 elif modalidade==2
 numero=int(input("Introduza um número de 0 a 100"))
-    
+```
