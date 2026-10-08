@@ -9,7 +9,7 @@
 Criar um jogo entre o computador e o jogaor. Cada um joga um número, quem no fim tiver o número final em que a soma for 100, ganha o jogo. Precisamos de 2 modalidade, uma em que o computador começa, e outra em que o oponente começa. 
 
 
-
+```python
 chaves = [1,12,23,34,45,56,67,78,89,100]
 import random 
 def computador_comeca():
@@ -54,3 +54,4 @@ if menu=="1":
     computador_comeca()
  else:
     oponente_comeca()
+```
