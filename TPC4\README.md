@@ -3,9 +3,10 @@
 ## Autor
 - Nome: Hiuany Drummond
 - ID: A115794
-
-
-"""python"""
+- Foto: <img width="1536" height="1024" alt="938bca37-1e4f-42d0-b5d2-975408df7609" src="https://github.com/user-attachments/assets/04117539-1bf6-4d1d-9629-edc1061ee7fb" />
+## Resumo
+Criar um programa que aparece um menu com 10 opções. De acordo com a opção que o utilizador escolher, o menu executa a função pretendida.
+```python
 
 import random
 listatotal=[]
@@ -85,4 +86,4 @@ while resposta!=0:
 if resposta==0:
      print("A sua lista é:", listatotal)
 
-"""
+```
