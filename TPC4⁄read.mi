@@ -1,0 +1,88 @@
+# TPC4
+
+## Autor
+- Nome: Hiuany Drummond
+- ID: A115794
+
+
+"""python"""
+
+import random
+listatotal=[]
+menu = ["(1)Criar lista", "(2)Ler Lista", "(3)Soma", "(4)Média", "(5)Maior", "(6)Menor", "(7)Esta Ordenada por onder crescente", "(8)Esta ordenada por ordem decrescente", "(9)Procurar um elemento", "(0)Sair"]
+resposta=int(input("Escolhas um numero de 0 a 9"))
+while resposta!=0:
+    if resposta==1:
+        def Lista1(N):
+            listatotal=[]
+            for i in range(N):
+                listatotal.append(random.randint(1,100))
+            return listatotal 
+    elif resposta==2:
+        def Lista2(N):
+            N=int(input("Quantos elementos?"))
+            listatotal=[]         
+            for i in range(N):
+                resposta2=int(input("Introduza um número"))
+                listatotal.append(resposta2)
+            return listatotal
+        
+    elif resposta==3:
+        def somaElem(listatotal):
+            soma=0
+            for n in listatotal:
+                soma=soma+n
+            return soma
+    elif resposta==4:
+        def mediaElem(listatotal):
+            soma=0
+            quantidade=len(listatotal)
+            for n in listatotal:
+                soma=soma+n
+                quantidade=len(listatotal)
+            return soma/quantidade
+    elif resposta==5:
+        def maiorElem(listatotal):
+            i=0
+            maior=listatotal[0]
+            for n in listatotal:
+                if maior<n:
+                    maior=n
+            return maior 
+    elif resposta==6:
+        def menorElem(listatotal):
+            i=0
+            menor=listatotal[0]
+            for n in listatotal:
+                if menor>n:
+                    menor=n         
+            return menor
+         
+    elif resposta==7:  
+        def ordenada(listatotal)  :
+            ordenada=True
+            for i in range(len(listatotal)-1):
+                if listatotal[i]>listatotal[i+1]:
+                    ordenada=False
+            return ordenada
+    elif resposta==8:   
+        def desordenada(listatotal) : 
+            desordenada=True
+            for i in range(len(listatotal)-1):
+                if listatotal[i]<listatotal[i+1]:
+                     desordenada=False
+            return desordenada
+    elif resposta==9: 
+        def posição(listatotal):
+            numero=int(input("Introduza um número"))
+            i=0
+            res=-1
+            for n in listatotal:
+                if n==numero:
+                    res=i
+                i=i+1
+            return res 
+if resposta==0:
+     print("A sua lista é:", listatotal)
+
+"""
